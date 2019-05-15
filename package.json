@@ -1,0 +1,25 @@
+{
+  "name": "urldecoder",
+  "version": "1.0.0",
+  "description": "npm i -g https+git@github.com:hling51325/urldecoder.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "urldecoder": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hling51325/urldecoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hling51325/urldecoder/issues"
+  },
+  "homepage": "https://github.com/hling51325/urldecoder#readme",
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}
