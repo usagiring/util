@@ -1,27 +1,20 @@
 #!/usr/bin/env node
 
 const program = require('commander')
+const { url, json } = require('./lib')
 
-// let [, , params] = process.argv
 program.version('0.0.1')
 
 program
+    .command('url')
     .option('-d, --decode <params>')
     .option('-e, --encode <params>')
-    .action(job)
-    .parse(process.argv);
+    .action(url)
 
-function job(options) {
-    let {
-        decode,
-        encode
-    } = options
-    if (decode) {
-        let decoded = decodeURI(decode)
-        console.log(decoded)
-    }
-    if (encode) {
-        let encoded = encodeURI(encode)
-        console.log(encoded)
-    }
-}
+program
+    .command('json')
+    .option('-p, --parse <params>')
+    .option('-s, --stringify <params>')
+    .action(json)
+
+program.parse(process.argv);
