@@ -1,6 +1,6 @@
 {
   "name": "util",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "npm i -g git+https://github.com/hling51325/util.git",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hling51325/urldecoder.git"
+    "url": "git+https://github.com/hling51325/util.git"
   },
   "author": "",
   "license": "ISC",
