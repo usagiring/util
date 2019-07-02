@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const { url, json } = require('./lib')
+const { url, json, mongo } = require('./lib')
 
 program.version('0.0.1')
 
@@ -16,5 +16,11 @@ program
     .option('-p, --parse <params>')
     .option('-s, --stringify <params>')
     .action(json)
+
+program
+    .command('mongo')
+    .option('-u, --url <params>')
+    .option('-s, --script <params>')
+    .action(mongo)
 
 program.parse(process.argv);
