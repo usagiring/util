@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const { url, json, mongo } = require('./lib')
+const { url, json, mongo, uuid } = require('./lib')
 
 program.version('0.0.1')
 
@@ -22,5 +22,9 @@ program
     .option('-u, --url <params>')
     .option('-s, --script <params>')
     .action(mongo)
+
+program
+    .command('uuid')
+    .action(uuid) 
 
 program.parse(process.argv);
