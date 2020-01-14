@@ -1,6 +1,6 @@
 {
   "name": "@tokine/util",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "npm i -g git+https://github.com/hling51325/util.git",
   "main": "index.js",
   "scripts": {
