@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-const { url, json, mongo, uuid } = require('./lib')
+const { url, json, mongo, uuid, base64 } = require('./lib')
 
 program.version('0.0.1')
 
@@ -26,5 +26,11 @@ program
 program
     .command('uuid')
     .action(uuid) 
+
+program
+    .command('base64')
+    .option('-d --decode <params>')
+    .option('-e --encode <params>')
+    .action(base64)  
 
 program.parse(process.argv);
